@@ -451,9 +451,38 @@ background-attachment: fixed;
   color: white;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other 
-@media (max-width: 700px) {
-    .row, .navbar {   
-        flex-direction: column;
-    }
-}*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .text {
+    font-size: 35px;
+  }
+  .youtube {
+     margin: auto;
+     width: 400px;
+     height: 200px;
+   }
+   .shops_ul{
+    flex-wrap: wrap;
+  }
+  .car {
+        flex-wrap: wrap;
+  }
+  .tab {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.tabcontent img {
+    width: 300px;
+    height: 200px;
+
+  }
+  .tabcontent    {
+    width: 100%;
+  }
+}

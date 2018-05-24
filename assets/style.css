@@ -1,0 +1,268 @@
+/* GENERAL STYLES */
+
+body, html {
+	box-sizing: border-box;
+	margin: 0;
+	height: 100%;
+	font-family: 'Muli', sans-serif;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+li {
+	list-style-type: none;
+	display: inline;
+}
+p {
+	line-height: 1.5;
+}
+li a {
+	padding: 14px 16px;
+	text-decoration: none;
+}
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}
+.container {
+	max-width: 1200px;
+	margin-left:auto;
+	margin-right: auto;
+	display: flex;
+}
+.social a:hover {
+	color: #6B5B95;
+}
+/* ----------  navigatio ------ */
+#navbar {
+	background: #111;
+	position: fixed;
+	padding: 20px;
+	z-index: 1;
+  	width: 100%;
+  	margin: 0;
+}
+#navbar a:hover {
+	background: #aaa;
+  	color: black;
+}
+/* --------- header -----------*/
+header {
+	background: url(img/heroimage4.gif);
+	background-size: cover;
+	text-align: center;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+header a{
+	color: white;
+}
+.container2 {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	
+}
+.home_page {
+	color: white;
+}
+
+.i_am {
+	padding: 10%;
+	font-size: 150%;
+	padding-top: 15%;
+}
+/* ------- About me ----------- */
+#about_me {
+	padding: 10px;
+	background: #111;
+	color: #aaa;
+}
+.my_img {
+	height: 230px;
+	width: 190px;
+	margin-top: 40px;
+}
+.contacts li {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts ul {
+	padding-left: 0px;
+}
+
+.contacts {
+	font-size: 150%;
+	
+}
+.flex {
+	display: flex;
+}
+.button1 {
+	margin: auto
+}
+.button1 button{
+	background: #7F3FBF;
+	padding: 20px;
+	border: none;
+}
+.button1 button:hover {
+	background: #aaa;
+	color: black;
+}
+.button1 a {
+	color: black;
+	display: grid;
+}
+/* -------- RESUME ----------- */
+#resume {
+	background: #ddd;
+	color: #85144B;
+	position: relative;
+}
+#resume .flex:not(.not) {
+	border-bottom: 1px solid black;
+}
+#resume h2 {
+	color: #001F3F;
+}
+#resume h4, p {
+	color: #6B5B95;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.good_at h3 {
+	margin-left: 40px;
+}
+.good_at {
+	margin-left: 20px;
+}
+.good_at li {
+	padding-bottom: 10px;
+}
+.university {
+	margin-left: 100px;
+}
+.job {
+	margin-left: 188px;
+}
+/* ------- portfolio --------*/
+#portfolio {
+	padding-top: 20px;
+	background: #111;
+	color: white;
+	background-size: cover;
+}
+#portfolio img {
+	height: 200px;
+	width: 300px;
+	padding: 20px;
+}
+#portfolio img:hover {
+
+}
+.portfolio h2 {
+	text-align: center;
+	color: #aaa;
+}
+
+.portfolio {
+	max-width: 1200px;
+	margin: auto;
+}
+.container4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.portfolio_img {
+	opacity: 0.3;
+}
+.portfolio_img:hover {
+	opacity: 1;
+}
+/* ------ Blog ------------*/
+#blog {
+	background: url(img/heroimage6.gif);
+	text-align: center;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+#blog img {
+	margin: 10px;
+	width: 220px;
+	height: 180px;
+	transition: transform .2s;
+}
+#blog img:hover {
+	transform: scale(1.2);
+}
+/* ------ footer --------- */
+footer {
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: #111;
+	height: 150px;
+}
+
+footer ul {
+	padding-top: 60px;
+	margin: 0;
+}
+
+footer a {
+	color: white;
+	font-size: 200%;
+}
+/* ------ Media -----*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#about_me img {
+	height: 900px;
+	width: 730px;
+	margin-left: 120px;
+	position: absolute;
+	}
+	#about_me .container2{
+		margin-top: 700px;
+	}
+	#about_me .container{
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		#about_me img {
+	height: 900px;
+	width: 730px;
+	margin-left: 120px;
+	position: absolute;
+	}
+	#about_me .container2{
+		margin-top: 700px;
+	}
+	#about_me .container{
+		display: flex;
+		flex-direction: column;
+	}
+	#resume .container {
+		padding: 50px;
+
+	}
+	#resume .flex {
+		font-size: 150%;
+		display: flex;
+		flex-direction: column;
+	}
+	.job, .university, .flex-column {
+		margin:  0;
+	}
+}

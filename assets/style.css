@@ -225,7 +225,7 @@ footer a {
 	font-size: 200%;
 }
 /* ------ Media -----*/
-@media screen and (max-width: 360px) {@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
 	h1, h2, h3, p, li, a{
 		font-size: 60%;
 	}

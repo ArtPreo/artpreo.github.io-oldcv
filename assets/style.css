@@ -225,7 +225,7 @@ footer a {
 	font-size: 200%;
 }
 /* ------ Media -----*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {@media screen and (max-width: 360px) {
 	h1, h2, h3, p, li, a{
 		font-size: 60%;
 	}
@@ -251,8 +251,9 @@ footer a {
 	}
 	.container2 {
 		max-width: 300px;
-		
-		
+	}
+	.portfolio_img {
+	opacity: 1;
 	}
 	#portfolio img {
 		width: 180px;
@@ -282,13 +283,14 @@ footer a {
 		margin: auto;
 		text-align: left;
 	}
-/*
-	.container2 {
-		max-width: 300px;
-		text-align: center;
-		
+		.portfolio_img {
+	opacity: 1;
 	}
-*/
+	
+	#blog img {
+	background: rgba(255,255,255, 0.4)
+	}
+
 	  #navbar {
     position: none;
 	width: none;
@@ -296,11 +298,6 @@ footer a {
 	#about_me button{
 		display: none;
 	}
-/*
-	.my_img {
-		padding: 0;
-	}
-*/
 }
 @media only screen and (max-width : 1050px) {
 	body {

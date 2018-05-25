@@ -29,6 +29,7 @@ h1, h2, h3 {
 	margin-left:auto;
 	margin-right: auto;
 	display: flex;
+	flex-direction: row;
 }
 .social a:hover {
 	color: #6B5B95;
@@ -224,45 +225,107 @@ footer a {
 	font-size: 200%;
 }
 /* ------ Media -----*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	#about_me img {
-	height: 900px;
-	width: 730px;
-	margin-left: 120px;
-	position: absolute;
+@media screen and (max-width: 360px) {
+	h1, h2, h3, p, li, a{
+		font-size: 60%;
 	}
-	#about_me .container2{
-		margin-top: 700px;
+	body {
+		margin: 0;
 	}
-	#about_me .container{
-		display: flex;
-		flex-direction: column;
+	.my_img {
+	display: none;
+	}
+	.my_img img {
+	display: none;
+	}
+	#about_me .my_img .flex {
+		display: none;
+	}
+  	#navbar {
+    position: none;
+	width: auto;
+  }
+	.contacts {
+		margin: auto;
+		text-align: left;
+	}
+	.container2 {
+		max-width: 300px;
+		
+		
+	}
+	#portfolio img {
+		width: 180px;
+		height: 130px;
 	}
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-		#about_me img {
-	height: 900px;
-	width: 730px;
-	margin-left: 120px;
-	position: absolute;
+@media only screen and (max-width : 600px) {
+	h1, h2, h3, p, li, a{
+		font-size: 70%;
 	}
-	#about_me .container2{
-		margin-top: 700px;
+	.my_img {
+	padding: none;
+	height: 10%;
+	width: 300px;
 	}
-	#about_me .container{
+	.my_img img {
+		max-width: 300px;
+		height: 399px;
+	}
+	.container2 {
+		max-width: 300px;
 		display: flex;
 		flex-direction: column;
+		margin-top: 0;
 	}
-	#resume .container {
-		padding: 50px;
-
+	.contacts {
+		margin: auto;
+		text-align: left;
 	}
-	#resume .flex {
-		font-size: 150%;
+/*
+	.container2 {
+		max-width: 300px;
+		text-align: center;
+		
+	}
+*/
+	  #navbar {
+    position: none;
+	width: none;
+  }
+	#about_me button{
+		display: none;
+	}
+/*
+	.my_img {
+		padding: 0;
+	}
+*/
+}
+@media only screen and (max-width : 1050px) {
+	body {
+		margin: 0;
+	}
+	#about_me .container, .container2 {
 		display: flex;
 		flex-direction: column;
+		text-align: center;
 	}
-	.job, .university, .flex-column {
-		margin:  0;
+	.my_img {
+	display: none;
+	}
+	#resume .flex, .flex-column {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+	padding: 0;
+}
+	#resume .good_at, .job, .university {
+		max-width: 600px;
+		margin-left:0;
+	}
+	#resume h3 {
+		margin-left: 0;
 	}
 }
